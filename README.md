@@ -11,22 +11,20 @@
 
 ## Проверка
 
-- Сверьте **SHA256** с файлом `SHA256SUMS` в релизе и с блоком на сайте.
-- Отчёты **VirusTotal** по хешу файла указаны в описании релиза и на сайте.
+- Сверьте **SHA256** с `SHA256SUMS` в релизе и с блоком на сайте.
+- Отчёты **VirusTotal** — по ссылкам в релизе и на сайте.
 
-## VirusTotal (v0.2.0)
+## VirusTotal (v0.2.1)
 
 | Файл | VirusTotal |
 |------|------------|
-| `umbra-windows.exe` | [отчёт по хешу](https://www.virustotal.com/gui/file/b8c7e96c0d2b6953fa030b2af53764ebbf3769c8555fe8fa59d7221e8ec8fbd0) |
-| `umbra-android.apk` | [отчёт по хешу](https://www.virustotal.com/gui/file/c098eda01dc1190fe446061f176307142e697ab444c8010622dea8247f7bb5d4) |
-
-Сканирование выполняется при каждом релизе (ссылки стабильны по SHA256). Единичные эвристики на неподписанном Windows exe возможны — крупные AV обычно чистые.
+| `umbra-windows.exe` | [отчёт](https://www.virustotal.com/gui/file/1f93418d38f9212bee9a40d8ac0984a1c9f6d172086ff92c45ffb0862f20ea8c) |
+| `umbra-android.apk` | [отчёт](https://www.virustotal.com/gui/file/c098eda01dc1190fe446061f176307142e697ab444c8010622dea8247f7bb5d4) |
 
 ## Предупреждения ОС
 
-Windows SmartScreen и установка Android «из неизвестного источника» нормальны без Authenticode / Google Play. Это не признак вируса само по себе — якорь доверия: домен `dudos.sbs`, GitHub-релиз и совпадение SHA256.
+Windows SmartScreen и установка Android «из неизвестного источника» нормальны без Authenticode / Google Play. Якорь доверия: `dudos.sbs`, GitHub-релиз и совпадение SHA256.
 
 ## Кабинет / сервер
 
-Control plane и серверная часть: [Dudosity/VPN](https://github.com/Dudosity/VPN).
+Control plane: [Dudosity/VPN](https://github.com/Dudosity/VPN).
